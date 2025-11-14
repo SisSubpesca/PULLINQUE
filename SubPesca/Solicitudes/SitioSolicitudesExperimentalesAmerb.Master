@@ -1,0 +1,43 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SitioSolicitudesExperimentalesAmerb.master.cs" Inherits="SubPesca.Solicitudes.SitioSolicitudesExperimentalesAmerb" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<%@ register src="~/Administrador/includes/header.ascx"         tagname="header"     tagprefix="include" %>
+<%@ register src="~/Administrador/includes/menuprincH.ascx"     tagname="menuprincH" tagprefix="include" %>
+<%@ register src="~/Solicitudes/includes/menuSolicitudesExperimentalesAmerb.ascx" tagname="menuprincV" tagprefix="include" %>
+<%@ register src="~/Administrador/includes/footer.ascx"         tagname="footer"     tagprefix="include" %>
+<%@ register src="~/Administrador/includes/migas.ascx"          tagname="migas"      tagprefix="include" %>
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+    <title>Pullinque 4.0</title>
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body class="admin_basebody">
+    <form id="form1" runat="server" enctype="multipart/form-data">
+    
+    <div id="base_main">  
+        <div id="main">    
+            <div id="main_content">
+                <div id="main_head">
+                    <include:header ID="header" runat="server"></include:header>
+                    <include:menuprincH ID="menuprincH" runat="server"></include:menuprincH>
+                    <include:migas ID="migas" runat="server"></include:migas>
+                </div>
+                <div id="main_body">
+                    <div id="main_leftbody">
+                        <include:menuprincV ID="menuprincV" runat="server"></include:menuprincV>
+                    </div>
+                    <div id="main_rightbody">
+                        <asp:ContentPlaceHolder ID="rightbody" runat="server"></asp:ContentPlaceHolder>
+                    </div>
+                </div>
+                <div id="main_footer">
+                    <include:footer ID="footer" runat="server"></include:footer>
+                </div>
+            </div>
+        </div>
+    </div>  
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Ambiental" Class="DBAmbientalDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=192.168.1.123;Initial Catalog=Ambiental;User ID=sa" SettingsObjectName="Datos.Properties.Settings" SettingsPropertyName="AmbientalConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Provincia" Member="Provincia">
+    <Type Name="Provincia">
+      <Column Name="IdProvincia" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Provincia" Member="Provincia1" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="IdRegion" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Codigo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Provincia_Comuna" Member="Comuna" ThisKey="IdProvincia" OtherKey="IdProvincia" Type="Comuna" />
+      <Association Name="Region_Provincia" Member="Region" ThisKey="IdRegion" OtherKey="IdRegion" Type="Region" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Comuna" Member="Comuna">
+    <Type Name="Comuna">
+      <Column Name="IdComuna" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Comuna" Member="Comuna1" Type="System.String" DbType="Char(30) NOT NULL" CanBeNull="false" />
+      <Column Name="Codigo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IdProvincia" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Provincia_Comuna" Member="Provincia" ThisKey="IdProvincia" OtherKey="IdProvincia" Type="Provincia" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Region" Member="Region">
+    <Type Name="Region">
+      <Column Name="IdRegion" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Codigo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Region" Member="Region1" Type="System.String" DbType="NVarChar(70) NOT NULL" CanBeNull="false" />
+      <Association Name="Region_Provincia" Member="Provincia" ThisKey="IdRegion" OtherKey="IdRegion" Type="Provincia" />
+    </Type>
+  </Table>
+  <Table Name="dbo.rbTipo" Member="rbTipo">
+    <Type Name="rbTipo">
+      <Column Name="idTipo" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="nombreTipo" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="grupo" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Association Name="rbTipo_rbTipoDocPestania" Member="rbTipoDocPestania" ThisKey="idTipo" OtherKey="idTipo" Type="rbTipoDocPestania" />
+    </Type>
+  </Table>
+  <Table Name="dbo.rbPestana" Member="rbPestana">
+    <Type Name="rbPestana">
+      <Column Name="idPestana" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="nombrePestana" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Association Name="rbPestana_rbTipoDocPestania" Member="rbTipoDocPestania" ThisKey="idPestana" OtherKey="idPestana" Type="rbTipoDocPestania" />
+    </Type>
+  </Table>
+  <Table Name="dbo.rbTipoDocPestania" Member="rbTipoDocPestania">
+    <Type Name="rbTipoDocPestania">
+      <Column Name="idTipo" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="idPestana" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="asocVigente" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="rbPestana_rbTipoDocPestania" Member="rbPestana" ThisKey="idPestana" OtherKey="idPestana" Type="rbPestana" IsForeignKey="true" />
+      <Association Name="rbTipo_rbTipoDocPestania" Member="rbTipo" ThisKey="idTipo" OtherKey="idTipo" Type="rbTipo" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

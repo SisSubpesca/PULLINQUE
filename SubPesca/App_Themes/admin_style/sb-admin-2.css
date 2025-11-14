@@ -1,0 +1,89 @@
+body {
+    background-color: #f8f8f8;
+}
+
+.sidebar .sidebar-nav.navbar-collapse {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+
+.sidebar ul li {
+    border-bottom: 1px solid #c6c6c6;
+}
+
+.sidebar ul li a.active {
+    background-color: #98A3FF;
+}
+
+.sidebar .arrow {
+    float: right;
+}
+
+.sidebar .fa.arrow:before {
+    content: "\f104";
+}
+
+.sidebar .active>a>.fa.arrow:before {
+    content: "\f107";
+}
+
+.sidebar .nav-second-level li,
+.sidebar .nav-third-level li,
+.sidebar .nav-third-level li {
+    border-bottom: 0!important;
+}
+
+
+.sidebar .nav-first-level li a {
+    padding-left: 16px;
+	border-bottom: 1px solid #EDECEC;
+	background-color: #f8f8f8;
+}
+
+
+.sidebar .nav-second-level li a {
+    padding-left: 25px;
+	border-bottom: 1px solid #EDECEC;
+	background-color: #E9ECFF;
+}
+
+.sidebar .nav-third-level li a {
+    padding-left: 40px;
+    border-bottom: 1px solid #EDECEC;
+	background-color: #E0E4FF;
+}
+
+.sidebar .nav-fourth-level li a {
+    padding-left: 55px;
+    border-bottom: 1px solid #EDECEC;
+	background-color: #D1D7FF;
+}
+
+/* sidebar del menu /Solicitudes/Registrar/identificacionSolicitante.aspx */
+.sidebar .nav-five-level li a 
+{
+    padding-left: 65px;
+    border-bottom: 1px solid #EDECEC;
+    background-color: #e9ecff;
+}
+
+@media(min-width:768px) {
+    .sidebar {
+		border-top:1px solid #c6c6c6;
+		border-left:1px solid #c6c6c6;
+		border-right:1px solid #c6c6c6;
+		z-index: 1;
+        position: absolute;
+        width: 232px;
+        margin-top: -4px;
+		margin-left: -5px;
+    }
+
+    .navbar-top-links .dropdown-messages,
+    .navbar-top-links .dropdown-tasks,
+    .navbar-top-links .dropdown-alerts {
+        margin-left: auto;
+    }
+}
+

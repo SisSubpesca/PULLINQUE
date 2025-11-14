@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3E5DA854-95C8-4FA0-999C-D34F554BECEE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LogicaNegocio</RootNamespace>
+    <AssemblyName>LogicaNegocio</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="cl\subpesca\rb\common\ContactoDA.cs" />
+    <Compile Include="cl\subpesca\rb\common\DataExternaDA.cs" />
+    <Compile Include="cl\subpesca\rb\common\OficinaDA.cs" />
+    <Compile Include="cl\subpesca\rb\common\ParametroGenericoDA.cs" />
+    <Compile Include="cl\subpesca\rb\doc planilla\DocPlanillaDA.cs" />
+    <Compile Include="cl\subpesca\rb\modificacion\AlertaTramiteModConcesionDA.cs" />
+    <Compile Include="cl\subpesca\rb\modificacion\AntecedenteModConcesionDA.cs" />
+    <Compile Include="cl\subpesca\rb\modificacion\UnidadDependenciaModDA.cs" />
+    <Compile Include="cl\subpesca\rb\relocalizacion\DetalleSectorDA.cs" />
+    <Compile Include="cl\subpesca\rb\relocalizacion\ErroresRelocalizacionDA.cs" />
+    <Compile Include="cl\subpesca\rb\relocalizacion\InformeRel_RESA_DA.cs" />
+    <Compile Include="cl\subpesca\rb\relocalizacion\OrigenSectorDA.cs" />
+    <Compile Include="cl\subpesca\rb\relocalizacion\TramiteRelocalizacionDA.cs" />
+    <Compile Include="cl\subpesca\rb\reportes\ReporteDA.cs" />
+    <Compile Include="cl\subpesca\rb\resolucion\ResolucionDA.cs" />
+    <Compile Include="cl\subpesca\rb\servicios\acceso\DespliegueSeccionService.cs" />
+    <Compile Include="cl\subpesca\rb\servicios\acceso\PermisosService.cs" />
+    <Compile Include="cl\subpesca\rb\servicios\cierreForzado\CierreForzadoService.cs" />
+    <Compile Include="cl\subpesca\rb\servicios\concesiones\ConcesionService.cs" />
+    <Compile Include="cl\subpesca\rb\servicios\correosEelectronicos\EnviarCorreo.cs" />
+    <Compile Include="cl\subpesca\rb\servicios\documento\DocumentoUnidadEspacialService.cs" />
+    <Compile Include="cl\subpesca\rb\servicios\estados\EstadoService.cs" />
+    <Compile Include="cl\subpesca\rb\servicios\indicadores\IndicadoresService.cs" />
+    <Compile Include="cl\subpesca\rb\servicios\mantenedores\MantenedorGeneralService.cs" />
+    <Compile Include="cl\subpesca\rb\servicios\mantenedores\MantenedorTitularService.cs" />
+    <Compile Include="cl\subpesca\rb\servicios\mantenedores\MantenedorTransversalService.cs" />
+    <Compile Include="cl\subpesca\rb\servicios\modificacion\SolicitudModificacionECMPOService.cs" />
+    <Compile Include="cl\subpesca\rb\servicios\modificacion\SolicitudModificacionService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="cl\subpesca\rb\servicios\relocalizacion\RelocalizacionRESAService.cs" />
+    <Compile Include="cl\subpesca\rb\servicios\relocalizacion\RelocalizacionService.cs" />
+    <Compile Include="cl\subpesca\rb\servicios\reportes\ReporteService.cs" />
+    <Compile Include="cl\subpesca\rb\servicios\resoluciones\ResolucionService.cs" />
+    <Compile Include="cl\subpesca\rb\servicios\solicitudes\CommonService.cs" />
+    <Compile Include="cl\subpesca\rb\servicios\solicitudes\InformacionAdicionalSolicitudesService.cs" />
+    <Compile Include="cl\subpesca\rb\servicios\solicitudes\InformacionSolicitudService.cs" />
+    <Compile Include="cl\subpesca\rb\servicios\solicitudes\SolicitudCentroAcopioService.cs" />
+    <Compile Include="cl\subpesca\rb\servicios\solicitudes\SolicitudCentroAmerbService.cs" />
+    <Compile Include="cl\subpesca\rb\servicios\solicitudes\SolicitudCentroColectorService.cs" />
+    <Compile Include="cl\subpesca\rb\servicios\solicitudes\SolicitudCentroFaenamientoService.cs" />
+    <Compile Include="cl\subpesca\rb\servicios\solicitudes\SolicitudECMPOService.cs" />
+    <Compile Include="cl\subpesca\rb\servicios\solicitudes\SolicitudExperimentalesAmerbService.cs" />
+    <Compile Include="cl\subpesca\rb\servicios\solicitudes\SolicitudExperimentalesConcesionService.cs" />
+    <Compile Include="cl\subpesca\rb\servicios\super\RbSuperSolicitudService.cs" />
+    <Compile Include="cl\subpesca\rb\servicios\super\ValidacionRutCupService.cs" />
+    <Compile Include="cl\subpesca\rb\servicios\usuario\RolService.cs" />
+    <Compile Include="cl\subpesca\rb\servicios\usuario\UsuarioService.cs" />
+    <Compile Include="cl\subpesca\rb\servicios\visacion\VisacionService.cs" />
+    <Compile Include="cl\subpesca\rb\solicitud\AvisoDA.cs" />
+    <Compile Include="cl\subpesca\rb\solicitud\DespliegueMenuSeccionDA.cs" />
+    <Compile Include="cl\subpesca\rb\solicitud\DetalleDatosSolicitudDA.cs" />
+    <Compile Include="cl\subpesca\rb\solicitud\DocGralCierreForzadoDA.cs" />
+    <Compile Include="cl\subpesca\rb\solicitud\DocumentosConcesionDA.cs" />
+    <Compile Include="cl\subpesca\rb\solicitud\EspecieProyTecnicoDA.cs" />
+    <Compile Include="cl\subpesca\rb\solicitud\EstructuraTecnicaPT_DA.cs" />
+    <Compile Include="cl\subpesca\rb\solicitud\GrupoSuspendidoDA.cs" />
+    <Compile Include="cl\subpesca\rb\solicitud\MantenedorDA.cs" />
+    <Compile Include="cl\subpesca\rb\solicitud\MatrizSucursalDA.cs" />
+    <Compile Include="cl\subpesca\rb\solicitud\OperadorDA.cs" />
+    <Compile Include="cl\subpesca\rb\solicitud\PersonaDA.cs" />
+    <Compile Include="cl\subpesca\rb\solicitud\ProgrProduccionDA.cs" />
+    <Compile Include="cl\subpesca\rb\solicitud\ProyectoTecnicoDA.cs" />
+    <Compile Include="cl\subpesca\rb\servicios\solicitudes\proyectoTecnico\ProyectoTecnicoService.cs" />
+    <Compile Include="cl\subpesca\rb\servicios\solicitudes\SolicitudConcesionService.cs" />
+    <Compile Include="cl\subpesca\rb\servicios\solicitudes\unidadEspacial\UnidadEspacialService.cs" />
+    <Compile Include="cl\subpesca\rb\solicitud\CartaDA.cs" />
+    <Compile Include="cl\subpesca\rb\solicitud\CoordenadaGeograficaDA.cs" />
+    <Compile Include="cl\subpesca\rb\solicitud\DatumDA.cs" />
+    <Compile Include="cl\subpesca\rb\solicitud\ObsPestaniaInformeDA.cs" />
+    <Compile Include="cl\subpesca\rb\solicitud\PoligonoDA.cs" />
+    <Compile Include="cl\subpesca\rb\solicitud\RepLegalDA.cs" />
+    <Compile Include="cl\subpesca\rb\solicitud\SometimientoSEA_DA.cs" />
+    <Compile Include="cl\subpesca\rb\solicitud\TemplateAvisoDA.cs" />
+    <Compile Include="cl\subpesca\rb\solicitud\TipoConcesionDA.cs" />
+    <Compile Include="cl\subpesca\rb\common\ArchivoBinarioSolicitudDA.cs" />
+    <Compile Include="cl\subpesca\rb\common\BarrioDA.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="cl\subpesca\rb\common\CentroCultivoDA.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="cl\subpesca\rb\common\ComunaDA.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="cl\subpesca\rb\common\EtapaCultivoDA.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="cl\subpesca\rb\common\MacrozonaDA.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="cl\subpesca\rb\common\PestanaDA.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="cl\subpesca\rb\common\ProvinciaDA.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="cl\subpesca\rb\common\RegionDA.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="cl\subpesca\rb\common\TipoDA.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="cl\subpesca\rb\errores\Logger.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="cl\subpesca\rb\servicios\solicitudes\antecedentesSector\AntecedentesSectorService.cs" />
+    <Compile Include="cl\subpesca\rb\servicios\solicitudes\identificacionSolicitante\SolicitanteService.cs" />
+    <Compile Include="cl\subpesca\rb\servicios\solicitudes\UnidadCultivoService.cs" />
+    <Compile Include="cl\subpesca\rb\solicitud\SolicitanteDA.cs" />
+    <Compile Include="cl\subpesca\rb\solicitud\SolicitudDA.cs" />
+    <Compile Include="cl\subpesca\rb\solicitud\TitularRegConcesionesDA.cs" />
+    <Compile Include="cl\subpesca\rb\solicitud\UnidadCultivoDA.cs" />
+    <Compile Include="cl\subpesca\rb\solicitud\CapitaniaDePuertoDA.cs" />
+    <Compile Include="cl\subpesca\rb\servicios\solicitudes\RequerimientoService.cs" />
+    <Compile Include="cl\subpesca\rb\solicitud\RequerimientoDA.cs" />
+    <Compile Include="cl\subpesca\rb\solicitud\UnidadEspacialDA.cs" />
+    <Compile Include="cl\subpesca\rb\solicitud\ValidacionDocGeneralDA.cs" />
+    <Compile Include="cl\subpesca\rb\solicitud\ValidacionDocumentacionDA.cs" />
+    <Compile Include="cl\subpesca\rb\solicitud\VerticeDA.cs" />
+    <Compile Include="cl\subpesca\rb\usuario\RolDA.cs" />
+    <Compile Include="cl\subpesca\rb\usuario\UsuarioDA.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="cl\subpesca\rb\visacion\VisacionDA.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Entidades\Datos.csproj">
+      <Project>{87413CB9-854C-4416-9C90-EB3ED06E8777}</Project>
+      <Name>Datos</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

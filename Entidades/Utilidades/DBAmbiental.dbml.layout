@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11.25, 8.5" name="DBAmbiental">
+  <DataContextMoniker Name="/DBAmbientalDataContext" />
+  <nestedChildShapes>
+    <classShape Id="edc47205-56ca-4f2c-9bd1-5eff27fc0f96" absoluteBounds="4.625, 3.5, 2, 1.4248478190104168">
+      <DataClassMoniker Name="/DBAmbientalDataContext/Provincia" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b304832a-6128-49dd-af97-4417d063374a" absoluteBounds="4.64, 3.96, 1.9700000000000002, 0.86484781901041674" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="070c9241-a247-4cb3-b978-e0e99f100c9e" absoluteBounds="7.875, 0.75, 2, 1.4248478190104168">
+      <DataClassMoniker Name="/DBAmbientalDataContext/Comuna" />
+      <nestedChildShapes>
+        <elementListCompartment Id="dc37a475-3b44-429a-bfe8-7cc76bfd00e7" absoluteBounds="7.89, 1.21, 1.9700000000000002, 0.86484781901041674" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(6.09375 : 3.5); (6.09375 : 1.40625); (7.875 : 1.40625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DBAmbientalDataContext/Provincia/Provincia_Comuna" />
+      <nodes>
+        <classShapeMoniker Id="edc47205-56ca-4f2c-9bd1-5eff27fc0f96" />
+        <classShapeMoniker Id="070c9241-a247-4cb3-b978-e0e99f100c9e" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="8cb723d4-99a5-4ff5-a2e3-3054b2734cc1" absoluteBounds="2.125, 0.875, 2, 1.26050048828125">
+      <DataClassMoniker Name="/DBAmbientalDataContext/Region" />
+      <nestedChildShapes>
+        <elementListCompartment Id="aec2ae01-ea30-4bdc-ba0a-95fca4aad560" absoluteBounds="2.14, 1.335, 1.9700000000000002, 0.70050048828125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(3.125 : 2.13550048828125); (3.125 : 4.21242390950521); (4.625 : 4.21242390950521)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DBAmbientalDataContext/Region/Region_Provincia" />
+      <nodes>
+        <classShapeMoniker Id="8cb723d4-99a5-4ff5-a2e3-3054b2734cc1" />
+        <classShapeMoniker Id="edc47205-56ca-4f2c-9bd1-5eff27fc0f96" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="a4745249-b35a-4ffd-8beb-660b411398ad" absoluteBounds="1.875, 5.5, 2, 1.26050048828125">
+      <DataClassMoniker Name="/DBAmbientalDataContext/rbTipo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="704a30cc-000a-4c1a-9308-e54357cb5467" absoluteBounds="1.8899999999999997, 5.96, 1.9700000000000002, 0.70050048828125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6e7fd33a-324d-4108-b641-df6410254aef" absoluteBounds="9, 4.875, 2, 1.0961531575520833">
+      <DataClassMoniker Name="/DBAmbientalDataContext/rbPestana" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1f62aa04-99f0-4321-9672-d92d87792886" absoluteBounds="9.015, 5.335, 1.9700000000000002, 0.53615315755208326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6c17d7f3-5e57-46b8-a19d-febc00e4373b" absoluteBounds="5.875, 5.625, 2, 1.26050048828125">
+      <DataClassMoniker Name="/DBAmbientalDataContext/rbTipoDocPestania" />
+      <nestedChildShapes>
+        <elementListCompartment Id="09797931-556c-4118-b344-4b171c605e16" absoluteBounds="5.89, 6.085, 1.9700000000000002, 0.70050048828125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(9 : 5.79807657877604); (7.875 : 5.79807657877604)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DBAmbientalDataContext/rbPestana/rbPestana_rbTipoDocPestania" />
+      <nodes>
+        <classShapeMoniker Id="6e7fd33a-324d-4108-b641-df6410254aef" />
+        <classShapeMoniker Id="6c17d7f3-5e57-46b8-a19d-febc00e4373b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3.875 : 6.19275024414063); (5.875 : 6.19275024414063)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DBAmbientalDataContext/rbTipo/rbTipo_rbTipoDocPestania" />
+      <nodes>
+        <classShapeMoniker Id="a4745249-b35a-4ffd-8beb-660b411398ad" />
+        <classShapeMoniker Id="6c17d7f3-5e57-46b8-a19d-febc00e4373b" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

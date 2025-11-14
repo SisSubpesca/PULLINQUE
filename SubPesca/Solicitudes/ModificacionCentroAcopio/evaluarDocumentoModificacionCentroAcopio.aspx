@@ -1,0 +1,16 @@
+﻿<%@ Page Language="C#" MasterPageFile="~/Solicitudes/SitioSolicitudesModificacionCentroAcopio.Master" AutoEventWireup="true" CodeBehind="evaluarDocumentoModificacionCentroAcopio.aspx.cs" 
+Inherits="SubPesca.Solicitudes.ModificacionCentroAcopio.evaluarDocumentoModificacionCentroAcopio" Theme="admin_style" %>
+
+<%@ Register TagPrefix="asp" Namespace="AjaxControlToolkit" Assembly="AjaxControlToolkit"  %>
+<%@ Register src="../Registrar/evaluarDocumentoComponente.ascx"            tagname="evaluarDocumentoComponente"                      tagprefix="uc01" %>
+
+
+<asp:Content  ID="Content2" ContentPlaceHolderID="rightbody" runat="server">
+    
+    <asp:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server"></asp:ToolkitScriptManager>
+
+    <asp:Panel ID="PanelVerDocumento"  Visible="true" runat="server">
+        <uc01:evaluarDocumentoComponente ID="evaluarDocumentoComponente" runat="server" />
+    </asp:Panel>
+    
+</asp:Content>
