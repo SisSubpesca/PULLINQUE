@@ -7,11 +7,13 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace SubPesca.Mantenedores.Transversales {
-    
-    
-    public partial class asocDocumentoTipo {
-        
+namespace SubPesca.Mantenedores.Transversales
+{
+
+
+    public partial class asocDocumentoTipo
+    {
+
         /// <summary>
         /// Control ToolkitScriptManager1.
         /// </summary>
@@ -20,7 +22,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::AjaxControlToolkit.ToolkitScriptManager ToolkitScriptManager1;
-        
+
         /// <summary>
         /// Control UpdatePanelMensajesValidaciones.
         /// </summary>
@@ -29,7 +31,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.UpdatePanel UpdatePanelMensajesValidaciones;
-        
+
         /// <summary>
         /// Control Panel1.
         /// </summary>
@@ -38,7 +40,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Panel Panel1;
-        
+
         /// <summary>
         /// Control ValidationSummaryErrores.
         /// </summary>
@@ -47,7 +49,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ValidationSummary ValidationSummaryErrores;
-        
+
         /// <summary>
         /// Control UpdatePanelErroresInferior.
         /// </summary>
@@ -56,7 +58,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.UpdatePanel UpdatePanelErroresInferior;
-        
+
         /// <summary>
         /// Control PanelErroresInferior.
         /// </summary>
@@ -65,7 +67,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Panel PanelErroresInferior;
-        
+
         /// <summary>
         /// Control ErroresInferior.
         /// </summary>
@@ -74,7 +76,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label ErroresInferior;
-        
+
         /// <summary>
         /// Control IdValidacionDocumentacion.
         /// </summary>
@@ -83,7 +85,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox IdValidacionDocumentacion;
-        
+
         /// <summary>
         /// Control UpdatePanelFormularioIngreso.
         /// </summary>
@@ -92,7 +94,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.UpdatePanel UpdatePanelFormularioIngreso;
-        
+
         /// <summary>
         /// Control PanelFormularioIngreso.
         /// </summary>
@@ -101,7 +103,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Panel PanelFormularioIngreso;
-        
+
         /// <summary>
         /// Control UpdatePanelErroresSuperior.
         /// </summary>
@@ -110,7 +112,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.UpdatePanel UpdatePanelErroresSuperior;
-        
+
         /// <summary>
         /// Control PanelErroresSuperior.
         /// </summary>
@@ -119,7 +121,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Panel PanelErroresSuperior;
-        
+
         /// <summary>
         /// Control ErroresSuperior.
         /// </summary>
@@ -128,7 +130,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label ErroresSuperior;
-        
+
         /// <summary>
         /// Control UpdatePanelFlujoDocumental.
         /// </summary>
@@ -137,7 +139,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.UpdatePanel UpdatePanelFlujoDocumental;
-        
+
         /// <summary>
         /// Control FlujoDocumentalLiteral.
         /// </summary>
@@ -146,7 +148,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Literal FlujoDocumentalLiteral;
-        
+
         /// <summary>
         /// Control FlujoDocumental.
         /// </summary>
@@ -155,7 +157,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList FlujoDocumental;
-        
+
         /// <summary>
         /// Control UpdatePanelTipoSalida.
         /// </summary>
@@ -164,7 +166,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.UpdatePanel UpdatePanelTipoSalida;
-        
+
         /// <summary>
         /// Control PanelTipoSalida.
         /// </summary>
@@ -173,7 +175,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Panel PanelTipoSalida;
-        
+
         /// <summary>
         /// Control TipoSalidaLiteral.
         /// </summary>
@@ -182,7 +184,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Literal TipoSalidaLiteral;
-        
+
         /// <summary>
         /// Control TipoSalida.
         /// </summary>
@@ -191,7 +193,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList TipoSalida;
-        
+
         /// <summary>
         /// Control UpdatePanelTipoEntrada.
         /// </summary>
@@ -200,7 +202,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.UpdatePanel UpdatePanelTipoEntrada;
-        
+
         /// <summary>
         /// Control PanelTipoEntrada.
         /// </summary>
@@ -209,7 +211,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Panel PanelTipoEntrada;
-        
+
         /// <summary>
         /// Control TipoEntradaLiteral.
         /// </summary>
@@ -218,7 +220,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Literal TipoEntradaLiteral;
-        
+
         /// <summary>
         /// Control TipoEntrada.
         /// </summary>
@@ -227,7 +229,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList TipoEntrada;
-        
+
         /// <summary>
         /// Control UpdatePanelOrigen.
         /// </summary>
@@ -236,7 +238,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.UpdatePanel UpdatePanelOrigen;
-        
+
         /// <summary>
         /// Control PanelOrigen.
         /// </summary>
@@ -245,7 +247,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Panel PanelOrigen;
-        
+
         /// <summary>
         /// Control OrigenLiteral.
         /// </summary>
@@ -254,7 +256,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Literal OrigenLiteral;
-        
+
         /// <summary>
         /// Control Origen.
         /// </summary>
@@ -263,7 +265,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList Origen;
-        
+
         /// <summary>
         /// Control UpdatePanelDestinatario.
         /// </summary>
@@ -272,7 +274,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.UpdatePanel UpdatePanelDestinatario;
-        
+
         /// <summary>
         /// Control PanelDestinatario.
         /// </summary>
@@ -281,7 +283,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Panel PanelDestinatario;
-        
+
         /// <summary>
         /// Control DestinatarioLiteral.
         /// </summary>
@@ -290,7 +292,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Literal DestinatarioLiteral;
-        
+
         /// <summary>
         /// Control Destinatario.
         /// </summary>
@@ -299,7 +301,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList Destinatario;
-        
+
         /// <summary>
         /// Control UpdatePanelAmbito.
         /// </summary>
@@ -308,7 +310,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.UpdatePanel UpdatePanelAmbito;
-        
+
         /// <summary>
         /// Control PanelAmbito.
         /// </summary>
@@ -317,7 +319,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Panel PanelAmbito;
-        
+
         /// <summary>
         /// Control Ambito.
         /// </summary>
@@ -326,7 +328,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList Ambito;
-        
+
         /// <summary>
         /// Control UpdatePanelSeccion.
         /// </summary>
@@ -335,7 +337,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.UpdatePanel UpdatePanelSeccion;
-        
+
         /// <summary>
         /// Control PanelSeccion.
         /// </summary>
@@ -344,7 +346,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Panel PanelSeccion;
-        
+
         /// <summary>
         /// Control Seccion.
         /// </summary>
@@ -353,7 +355,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList Seccion;
-        
+
         /// <summary>
         /// Control UpdatePanelTipo.
         /// </summary>
@@ -362,7 +364,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.UpdatePanel UpdatePanelTipo;
-        
+
         /// <summary>
         /// Control PanelTipo.
         /// </summary>
@@ -371,7 +373,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Panel PanelTipo;
-        
+
         /// <summary>
         /// Control TipoLiteral.
         /// </summary>
@@ -380,7 +382,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Literal TipoLiteral;
-        
+
         /// <summary>
         /// Control Tipo.
         /// </summary>
@@ -389,7 +391,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList Tipo;
-        
+
         /// <summary>
         /// Control UpdatePanelTipoDocumento.
         /// </summary>
@@ -398,7 +400,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.UpdatePanel UpdatePanelTipoDocumento;
-        
+
         /// <summary>
         /// Control PanelTipoDocumento.
         /// </summary>
@@ -407,7 +409,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Panel PanelTipoDocumento;
-        
+
         /// <summary>
         /// Control TipoDocumentoLiteral.
         /// </summary>
@@ -416,7 +418,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Literal TipoDocumentoLiteral;
-        
+
         /// <summary>
         /// Control TipoDocumento.
         /// </summary>
@@ -425,7 +427,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList TipoDocumento;
-        
+
         /// <summary>
         /// Control UpdatePanelAplica.
         /// </summary>
@@ -434,7 +436,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.UpdatePanel UpdatePanelAplica;
-        
+
         /// <summary>
         /// Control PanelAplica.
         /// </summary>
@@ -443,7 +445,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Panel PanelAplica;
-        
+
         /// <summary>
         /// Control AplicaNumero.
         /// </summary>
@@ -452,7 +454,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList AplicaNumero;
-        
+
         /// <summary>
         /// Control AplicaFecha.
         /// </summary>
@@ -461,7 +463,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList AplicaFecha;
-        
+
         /// <summary>
         /// Control AplicaNumeroCI.
         /// </summary>
@@ -470,7 +472,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList AplicaNumeroCI;
-        
+
         /// <summary>
         /// Control AplicaFechaCI.
         /// </summary>
@@ -479,7 +481,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList AplicaFechaCI;
-        
+
         /// <summary>
         /// Control AplicaArchivoBinario.
         /// </summary>
@@ -488,7 +490,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList AplicaArchivoBinario;
-        
+
         /// <summary>
         /// Control VerificaConforme.
         /// </summary>
@@ -497,7 +499,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList VerificaConforme;
-        
+
         /// <summary>
         /// Control ExtensionPlazo.
         /// </summary>
@@ -506,7 +508,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ExtensionPlazo;
-        
+
         /// <summary>
         /// Control AplicaConcesion.
         /// </summary>
@@ -515,7 +517,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList AplicaConcesion;
-        
+
         /// <summary>
         /// Control AplicaModificacionAmpliacion.
         /// </summary>
@@ -524,7 +526,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList AplicaModificacionAmpliacion;
-        
+
         /// <summary>
         /// Control AplicaModificacionReduccion.
         /// </summary>
@@ -533,7 +535,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList AplicaModificacionReduccion;
-        
+
         /// <summary>
         /// Control AplicaModificacionEspeciePT.
         /// </summary>
@@ -542,7 +544,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList AplicaModificacionEspeciePT;
-        
+
         /// <summary>
         /// Control AplicaModificacionRegularizacion.
         /// </summary>
@@ -551,7 +553,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList AplicaModificacionRegularizacion;
-        
+
         /// <summary>
         /// Control AplicaRelocalizacion.
         /// </summary>
@@ -560,7 +562,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList AplicaRelocalizacion;
-        
+
         /// <summary>
         /// Control AplicaAmerb.
         /// </summary>
@@ -569,7 +571,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList AplicaAmerb;
-        
+
         /// <summary>
         /// Control AplicaFaenamiento.
         /// </summary>
@@ -578,7 +580,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList AplicaFaenamiento;
-        
+
         /// <summary>
         /// Control AplicaAcopio.
         /// </summary>
@@ -587,7 +589,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList AplicaAcopio;
-        
+
         /// <summary>
         /// Control AplicaColectores.
         /// </summary>
@@ -596,7 +598,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList AplicaColectores;
-        
+
         /// <summary>
         /// Control VerificaAmpliacionPlazo.
         /// </summary>
@@ -605,7 +607,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList VerificaAmpliacionPlazo;
-        
+
         /// <summary>
         /// Control VerficiaAmpliacionExtension.
         /// </summary>
@@ -614,7 +616,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList VerficiaAmpliacionExtension;
-        
+
         /// <summary>
         /// Control AplicaExpAmerb.
         /// </summary>
@@ -623,7 +625,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList AplicaExpAmerb;
-        
+
         /// <summary>
         /// Control AplicaExpConcesion.
         /// </summary>
@@ -632,7 +634,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList AplicaExpConcesion;
-        
+
         /// <summary>
         /// Control AplicaECMPO.
         /// </summary>
@@ -641,7 +643,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList AplicaECMPO;
-        
+
         /// <summary>
         /// Control AplicaModECMPOAmpliacion.
         /// </summary>
@@ -650,7 +652,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList AplicaModECMPOAmpliacion;
-        
+
         /// <summary>
         /// Control AplicaModECMPOReduccion.
         /// </summary>
@@ -659,7 +661,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList AplicaModECMPOReduccion;
-        
+
         /// <summary>
         /// Control AplicaModECMPOEspecie.
         /// </summary>
@@ -668,7 +670,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList AplicaModECMPOEspecie;
-        
+
         /// <summary>
         /// Control AplicaModECMPO_PT.
         /// </summary>
@@ -677,7 +679,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList AplicaModECMPO_PT;
-        
+
         /// <summary>
         /// Control AplicaModECMPORegularizacion.
         /// </summary>
@@ -686,7 +688,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList AplicaModECMPORegularizacion;
-        
+
         /// <summary>
         /// Control AplicaModAcopioAmpliacion.
         /// </summary>
@@ -695,7 +697,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList AplicaModAcopioAmpliacion;
-        
+
         /// <summary>
         /// Control AplicaModAcopioReduccion.
         /// </summary>
@@ -704,7 +706,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList AplicaModAcopioReduccion;
-        
+
         /// <summary>
         /// Control AplicaModAcopioEspecie.
         /// </summary>
@@ -713,7 +715,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList AplicaModAcopioEspecie;
-        
+
         /// <summary>
         /// Control AplicaModAcopioPT.
         /// </summary>
@@ -722,7 +724,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList AplicaModAcopioPT;
-        
+
         /// <summary>
         /// Control AplicaModAcopioRegularizacion.
         /// </summary>
@@ -731,7 +733,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList AplicaModAcopioRegularizacion;
-        
+
         /// <summary>
         /// Control AplicaModFaenamientoAmpliacion.
         /// </summary>
@@ -740,7 +742,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList AplicaModFaenamientoAmpliacion;
-        
+
         /// <summary>
         /// Control AplicaModFaenamientoReduccion.
         /// </summary>
@@ -749,7 +751,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList AplicaModFaenamientoReduccion;
-        
+
         /// <summary>
         /// Control AplicaModFaenamientoEspecie.
         /// </summary>
@@ -758,7 +760,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList AplicaModFaenamientoEspecie;
-        
+
         /// <summary>
         /// Control AplicaModFaenamientoPT.
         /// </summary>
@@ -767,7 +769,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList AplicaModFaenamientoPT;
-        
+
         /// <summary>
         /// Control AplicaModFaenamientoRegularizacion.
         /// </summary>
@@ -776,7 +778,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList AplicaModFaenamientoRegularizacion;
-        
+
         /// <summary>
         /// Control AplicaModAmerbAmpliacion.
         /// </summary>
@@ -785,7 +787,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList AplicaModAmerbAmpliacion;
-        
+
         /// <summary>
         /// Control AplicaModAmerbReduccion.
         /// </summary>
@@ -794,7 +796,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList AplicaModAmerbReduccion;
-        
+
         /// <summary>
         /// Control AplicaModAmerbEspecie.
         /// </summary>
@@ -803,7 +805,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList AplicaModAmerbEspecie;
-        
+
         /// <summary>
         /// Control AplicaModAmerbPT.
         /// </summary>
@@ -812,7 +814,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList AplicaModAmerbPT;
-        
+
         /// <summary>
         /// Control AplicaModAmerbRegularizacion.
         /// </summary>
@@ -821,7 +823,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList AplicaModAmerbRegularizacion;
-        
+
         /// <summary>
         /// Control Guardar.
         /// </summary>
@@ -830,16 +832,16 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button Guardar;
-        
+
         /// <summary>
-        /// Control Buscar.
+        /// Control Button2.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Buscar;
-        
+        protected global::System.Web.UI.WebControls.Button Button2;
+
         /// <summary>
         /// Control UpdatePanelGridRequerimiento.
         /// </summary>
@@ -848,7 +850,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.UpdatePanel UpdatePanelGridRequerimiento;
-        
+
         /// <summary>
         /// Control PanelGridRequerimiento.
         /// </summary>
@@ -857,7 +859,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Panel PanelGridRequerimiento;
-        
+
         /// <summary>
         /// Control GridRequerimiento.
         /// </summary>
@@ -866,7 +868,7 @@ namespace SubPesca.Mantenedores.Transversales {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView GridRequerimiento;
-        
+
         /// <summary>
         /// Control ExportarGrilla.
         /// </summary>

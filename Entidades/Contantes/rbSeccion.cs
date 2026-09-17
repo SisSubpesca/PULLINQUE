@@ -46,7 +46,7 @@ namespace Datos.Contantes
         public static readonly int CULTIVO_DE_ALGAS = 73;
         public static readonly int PROGRAMA_DE_PRODUCCION = 47;
         public static readonly int OBSERVACIONES_PROYECTO_TECNICO = 48;
-
+        public static readonly int ARCHIVO_ADJUNTO_PROYECTO_TECNICO = 127;
 
         //INFORMES Y RESOLUCIONES
         public static readonly int ANTECEDENTES_URB = 102;
@@ -182,7 +182,7 @@ namespace Datos.Contantes
         }
 
         public static readonly int FECHA_SOLICITADA_TITULAR_COLECTOR = 128;
-        public static readonly int ARCHIVO_ADJUNTO_PROYECTO_TECNICO = 127;
+        
         public static readonly int ESTRUCTURAS_TECNICAS_A_INSTALAR_CADA_ANIO_COLECTOR = 129;
         
     }

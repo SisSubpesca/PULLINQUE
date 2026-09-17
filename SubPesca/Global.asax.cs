@@ -25,7 +25,8 @@ namespace SubPesca
     {
 
         Logger logger = new Logger();
-        
+        private static readonly NLog.Logger NLogger =  NLog.LogManager.GetCurrentClassLogger();
+
         protected void Application_Start(object sender, EventArgs e)
         {
             StdSchedulerFactory factory = new StdSchedulerFactory();
@@ -220,8 +221,14 @@ namespace SubPesca
             }
         }
 
-        
-        
+        protected void Application_Error()
+        {
+            Exception exception = Server.GetLastError();
+            NLogger.Error(exception, "Error no controlado en la aplicación");
+        }
+
+
+
 
         protected void Application_AuthenticateRequest(object sender, EventArgs e)
         {

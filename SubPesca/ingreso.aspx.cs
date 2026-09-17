@@ -59,7 +59,8 @@ namespace SubPesca
                 //Version.Text = "Sistema Pullinque versión 4.15. 17/05/2021";
                 //Version.Text = "Sistema Pullinque versión 4.16. 09/06/2021";
                 //Version.Text = "Sistema Pullinque versión 4.17. 09/12/2024";
-                Version.Text = "Sistema Pullinque versión 4.18. 04/04/2025";
+                //Version.Text = "Sistema Pullinque versión 4.18. 04/04/2025";
+                //Version.Text = "Sistema Pullinque versión 4.19. 16/09/2026";
             };
 
         }

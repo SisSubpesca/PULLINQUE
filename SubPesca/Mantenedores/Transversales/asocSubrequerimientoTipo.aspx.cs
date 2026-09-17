@@ -2131,6 +2131,8 @@ namespace SubPesca.Mantenedores.Transversales
         private void cargarGrillaValidacionDocumentacion()
         {
             ValidacionDocumentacion validacionDocumentacion = new ValidacionDocumentacion();
+            validacionDocumentacion.reseteaFiltros();
+
             List<ValidacionDocumentacion> dt = validacionDocumentacionDA.ListaValidacionDocumentacion(validacionDocumentacion);
 
             GridRequerimiento.DataSource = dt;
@@ -2265,6 +2267,7 @@ namespace SubPesca.Mantenedores.Transversales
         protected void Buscar_Click(object sender, EventArgs e)
         {
                 ValidacionDocumentacion validacionDocumentacion = new ValidacionDocumentacion();
+                validacionDocumentacion.reseteaFiltros();
 
                 validacionDocumentacion.flujoDocumental = new ParametroGenerico(Convert.ToInt32(FlujoDocumental.SelectedValue));
 
@@ -2349,215 +2352,22 @@ namespace SubPesca.Mantenedores.Transversales
                     validacionDocumentacion.archivoBinario = Convert.ToInt32(AplicaArchivoBinario.SelectedValue);
                 }
 
-                //if (VerificaConforme.Checked)
-                //{
-                //    validacionDocumentacion.verificaConforme = true;
-                //}
-
-                //if (AplicaConcesion.Checked)
-                //{
-                //    validacionDocumentacion.aplicaConcesion = 1;
-                //}
-
+                
                 validacionDocumentacion.aplicaConcesion = Convert.ToInt32(AplicaConcesion.SelectedItem.Value);
-
-                //if (AplicaModificacionAmpliacion.Checked)
-                //{
-                //    validacionDocumentacion.aplicaModAmpliacion = 1;
-                //}
                 validacionDocumentacion.aplicaModAmpliacion = Convert.ToInt32(AplicaModificacionAmpliacion.SelectedItem.Value);
-
-                //if (AplicaModificacionEspeciePT.Checked)
-                //{
-                //    validacionDocumentacion.aplicaModEspeciePT = 1;
-                //}
+                validacionDocumentacion.aplicaModReduccion = Convert.ToInt32(AplicaModificacionReduccion.SelectedItem.Value);
                 validacionDocumentacion.aplicaModEspeciePT = Convert.ToInt32(AplicaModificacionEspeciePT.SelectedItem.Value);
-
-                //if (AplicaModificacionRegularizacion.Checked)
-                //{
-                //    validacionDocumentacion.aplicaModRegularizacion = 1;
-                //}
                 validacionDocumentacion.aplicaModRegularizacion = Convert.ToInt32(AplicaModificacionRegularizacion.SelectedItem.Value);
-
-                //if (AplicaAmerb.Checked)
-                //{
-                //    validacionDocumentacion.aplicaAmerb = 1;
-                //}
+                validacionDocumentacion.aplicaRelocalizacion = Convert.ToInt32(AplicaRelocalizacion.SelectedItem.Value);
                 validacionDocumentacion.aplicaAmerb = Convert.ToInt32(AplicaAmerb.SelectedItem.Value);
-
-                //if (AplicaFaenamiento.Checked)
-                //{
-                //    validacionDocumentacion.aplicaFaenamiento = 1;
-                //}
                 validacionDocumentacion.aplicaFaenamiento = Convert.ToInt32(AplicaFaenamiento.SelectedItem.Value);
-
-                //if (AplicaAcopio.Checked)
-                //{
-                //    validacionDocumentacion.aplicaAcopio = 1;
-                //}
                 validacionDocumentacion.aplicaAcopio = Convert.ToInt32(AplicaAcopio.SelectedItem.Value);
-
-                //if (AplicaColectores.Checked)
-                //{
-                //    validacionDocumentacion.aplicaColectores = 1;
-                //}
                 validacionDocumentacion.aplicaColectores = Convert.ToInt32(AplicaColectores.SelectedItem.Value);
-
-                //if (VerificaAmpliacionPlazo.Checked)
-                //{
-                //    validacionDocumentacion.verificaAmpPlazo = 1;
-                //}
-                validacionDocumentacion.verificaAmpPlazo = Convert.ToInt32(VerificaAmpliacionPlazo.SelectedItem.Value);
-
-                //if (VerficiaAmpliacionExtension.Checked)
-                //{
-                //    validacionDocumentacion.verificaAmpExtension = 1;
-                //}
-                validacionDocumentacion.verificaAmpExtension = Convert.ToInt32(VerficiaAmpliacionExtension.SelectedItem.Value);
-
-                //if (ExtensionPlazo.Checked)
-                //{
-                //    validacionDocumentacion.nuevaFecha = 1;
-                //}
-                validacionDocumentacion.nuevaFecha = Convert.ToInt32(ExtensionPlazo.SelectedItem.Value);
-
-                //if (AplicaExpAmerb.Checked)
-                //{
-                //    validacionDocumentacion.aplicaExperimentalesAmerb = 1;
-                //}
                 validacionDocumentacion.aplicaExperimentalesAmerb = Convert.ToInt32(AplicaExpAmerb.SelectedItem.Value);
-
-                //if (AplicaExpConcesion.Checked)
-                //{
-                //    validacionDocumentacion.aplicaExpConcesion = 1;
-                //}
                 validacionDocumentacion.aplicaExpConcesion = Convert.ToInt32(AplicaExpConcesion.SelectedItem.Value);
-
-                //if (AplicaECMPO.Checked)
-                //{
-                //    validacionDocumentacion.aplicaAcuiculturaEcmpo = 1;
-                //}
                 validacionDocumentacion.aplicaAcuiculturaEcmpo = Convert.ToInt32(AplicaECMPO.SelectedItem.Value);
 
-                //if (AplicaModECMPOAmpliacion.Checked)
-                //{
-                //    validacionDocumentacion.aplicaModECMPOAmpl = 1;
-                //}
-                validacionDocumentacion.aplicaModECMPOAmpl = Convert.ToInt32(AplicaModECMPOAmpliacion.SelectedItem.Value);
-
-                //if (AplicaModECMPOReduccion.Checked)
-                //{
-                //    validacionDocumentacion.aplicaModECMPOReduc = 1;
-                //}
-                validacionDocumentacion.aplicaModECMPOReduc = Convert.ToInt32(AplicaModECMPOReduccion.SelectedItem.Value);
-
-                //if (AplicaModECMPOEspecie.Checked)
-                //{
-                //    validacionDocumentacion.aplicaModECMPOEspecie = 1;
-                //}
-                validacionDocumentacion.aplicaModECMPOEspecie = Convert.ToInt32(AplicaModECMPOEspecie.SelectedItem.Value);
-
-                //if (AplicaModECMPO_PT.Checked)
-                //{
-                //    validacionDocumentacion.aplicaModECMPO_PT = 1;
-                //}
-                validacionDocumentacion.aplicaModECMPO_PT = Convert.ToInt32(AplicaModECMPO_PT.SelectedItem.Value);
-
-                //if (AplicaModECMPORegularizacion.Checked)
-                //{
-                //    validacionDocumentacion.aplicaModECMPO_Regulariz = 1;
-                //}
-                validacionDocumentacion.aplicaModECMPO_Regulariz = Convert.ToInt32(AplicaModECMPORegularizacion.SelectedItem.Value);
-
-                //if (AplicaModAcopioAmpliacion.Checked)
-                //{
-                //    validacionDocumentacion.aplicaModAcopioAmpl = 1;
-                //}
-                validacionDocumentacion.aplicaModAcopioAmpl = Convert.ToInt32(AplicaModAcopioAmpliacion.SelectedItem.Value);
-
-                //if (AplicaModAcopioReduccion.Checked)
-                //{
-                //    validacionDocumentacion.aplicaModAcopioReduc = 1;
-                //}
-                validacionDocumentacion.aplicaModAcopioReduc = Convert.ToInt32(AplicaModAcopioReduccion.SelectedItem.Value);
-
-                //if (AplicaModAcopioEspecie.Checked)
-                //{
-                //    validacionDocumentacion.aplicaModAcopioEspecie = 1;
-                //}
-                validacionDocumentacion.aplicaModAcopioEspecie = Convert.ToInt32(AplicaModAcopioEspecie.SelectedItem.Value);
-
-                //if (AplicaModAcopioPT.Checked)
-                //{
-                //    validacionDocumentacion.aplicaModAcopio_PT = 1;
-                //}
-                validacionDocumentacion.aplicaModAcopio_PT = Convert.ToInt32(AplicaModAcopioPT.SelectedItem.Value);
-
-                //if (AplicaModAcopioRegularizacion.Checked)
-                //{
-                //    validacionDocumentacion.aplicaModAcopioRegulariz = 1;
-                //}
-                validacionDocumentacion.aplicaModAcopioRegulariz = Convert.ToInt32(AplicaModAcopioRegularizacion.SelectedItem.Value);
-
-                //if (AplicaModFaenamientoAmpliacion.Checked)
-                //{
-                //    validacionDocumentacion.aplicaModFaenamAmpl = 1;
-                //}
-                validacionDocumentacion.aplicaModFaenamAmpl = Convert.ToInt32(AplicaModFaenamientoAmpliacion.SelectedItem.Value);
-
-                //if (AplicaModFaenamientoReduccion.Checked)
-                //{
-                //    validacionDocumentacion.aplicaModFaenamReduc = 1;
-                //}
-                validacionDocumentacion.aplicaModFaenamReduc = Convert.ToInt32(AplicaModFaenamientoReduccion.SelectedItem.Value);
-
-                //if (AplicaModFaenamientoEspecie.Checked)
-                //{
-                //    validacionDocumentacion.aplicaModFaenamEspecie = 1;
-                //}
-                validacionDocumentacion.aplicaModFaenamEspecie = Convert.ToInt32(AplicaModFaenamientoEspecie.SelectedItem.Value);
-
-                //if (AplicaModFaenamientoPT.Checked)
-                //{
-                //    validacionDocumentacion.aplicaModFaenam_PT = 1;
-                //}
-                validacionDocumentacion.aplicaModFaenam_PT = Convert.ToInt32(AplicaModFaenamientoPT.SelectedItem.Value);
-
-                //if (AplicaModFaenamientoRegularizacion.Checked)
-                //{
-                //    validacionDocumentacion.aplicaModFaenamRegulariz = 1;
-                //}
-                validacionDocumentacion.aplicaModFaenamRegulariz = Convert.ToInt32(AplicaModFaenamientoRegularizacion.SelectedItem.Value);
-
-                //if (AplicaModAmerbAmpliacion.Checked)
-                //{
-                //    validacionDocumentacion.aplicaModAmerbAmpl = 1;
-                //}
-                validacionDocumentacion.aplicaModAmerbAmpl = Convert.ToInt32(AplicaModAmerbAmpliacion.SelectedItem.Value);
-
-                //if (AplicaModAmerbReduccion.Checked)
-                //{
-                //    validacionDocumentacion.aplicaModAmerbReduc = 1;
-                //}
-                validacionDocumentacion.aplicaModAmerbReduc = Convert.ToInt32(AplicaModAmerbReduccion.SelectedItem.Value);
-
-                //if (AplicaModAmerbEspecie.Checked)
-                //{
-                //    validacionDocumentacion.aplicaModAmerbEspecie = 1;
-                //}
-                validacionDocumentacion.aplicaModAmerbEspecie = Convert.ToInt32(AplicaModAmerbEspecie.SelectedItem.Value);
-
-                //if (AplicaModAmerbPT.Checked)
-                //{
-                //    validacionDocumentacion.aplicaModAmerb_PT = 1;
-                //}
-                validacionDocumentacion.aplicaModAmerb_PT = Convert.ToInt32(AplicaModAmerbPT.SelectedItem.Value);
-
-                //if (AplicaModAmerbRegularizacion.Checked)
-                //{
-                //    validacionDocumentacion.aplicaModAmerbRegulariz = 1;
-                //}
-                validacionDocumentacion.aplicaModAmerbRegulariz = Convert.ToInt32(AplicaModAmerbRegularizacion.SelectedItem.Value);
+            
 
                 if (validacionDocumentacion != null)
                 {

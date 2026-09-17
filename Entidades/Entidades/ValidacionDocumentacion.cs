@@ -870,11 +870,61 @@ namespace Datos.Entidades
             }
         }
 
-        public ValidacionDocumentacion() { 
+        public ValidacionDocumentacion() {
+
         }
 
-          //SUBCLASE
-         [Serializable]
+
+        public void reseteaFiltros()
+        {
+
+            numero = -1;
+            fecha = -1;
+            nuevaFecha = -1; 
+            numeroCI = -1;
+            fechaCI = -1;
+            archivoBinario = -1;
+            aplicaConcesion = -1;
+            aplicaModAmpliacion = -1;
+            aplicaModReduccion = -1;
+            aplicaModEspeciePT = -1;
+            aplicaModRegularizacion = -1;
+            aplicaRelocalizacion = -1;
+            aplicaAmerb = -1;
+            aplicaExperimentalesAmerb = -1;
+            aplicaFaenamiento = -1;
+            aplicaAcopio = -1;
+            aplicaColectores = -1;
+            verificaAmpPlazo = -1;
+            verificaAmpExtension = -1;
+            aplicaExpConcesion = -1;
+            aplicaAcuiculturaEcmpo = -1;
+            aplicaModPT = -1;
+            aplicaModECMPOAmpl = -1;
+            aplicaModECMPOReduc = -1;
+            aplicaModECMPOEspecie = -1;
+            aplicaModECMPO_PT = -1;
+            aplicaModECMPO_Regulariz = -1;
+            aplicaModAcopioAmpl = -1;
+            aplicaModAcopioReduc = -1;
+            aplicaModAcopioEspecie = -1;
+            aplicaModAcopio_PT = -1;
+            aplicaModAcopioRegulariz = -1;
+            aplicaModFaenamAmpl = -1;
+            aplicaModFaenamReduc = -1;
+            aplicaModFaenamEspecie = -1;
+            aplicaModFaenam_PT = -1;
+            aplicaModFaenamRegulariz = -1;
+            aplicaModAmerbAmpl = -1;
+            aplicaModAmerbReduc = -1;
+            aplicaModAmerbEspecie = -1;
+            aplicaModAmerb_PT = -1;
+            aplicaModAmerbRegulariz = -1;
+        }
+
+
+        //SUBCLASE
+        [Serializable]
          public class Serializable  //(Atributos encapsulados en una subclase con el fin de ser guardados dentro de un ViewState)
          {
              public int idValDocumentacion { get; set; }

@@ -581,10 +581,7 @@
 
         <table class="form" cellpadding="0px" cellspacing="0px">   
         <tr>
-            <td class="col1">
-            <asp:Button ID="Guardar" runat="server" Text="<%$Resources:spanish.language,guardar%>"  CausesValidation="true" onclick="Guardar_Click" />
-            <asp:Button ID="Buscar" runat="server" Text="Buscar" onclick="Buscar_Click" />
-            </td>              
+            <td class="col1"><asp:Button ID="Guardar" runat="server" Text="<%$Resources:spanish.language,guardar%>"  CausesValidation="true" onclick="Guardar_Click" /></td>              
         </tr>
         </table>
 
@@ -593,6 +590,13 @@
         </asp:UpdatePanel>
 
         <br />
+
+        
+        <table class="form" cellpadding="0px" cellspacing="0px">   
+        <tr>
+            <td class="col1"><asp:Button ID="Button2" runat="server" Text="Buscar" onclick="Buscar_Click" /></td>              
+        </tr>
+        </table>
 
     </asp:Panel>
 

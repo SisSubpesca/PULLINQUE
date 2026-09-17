@@ -24,7 +24,7 @@
                     <div id="main_rightbody">
                         <div class="login">                               
                             <div class="content_login">
-                            <asp:Label ID="Version" runat="server" Text=""></asp:Label>
+                            <asp:Label ID="Version" runat="server" Text="Sistema Pullinque versión 4.19. 16/09/2026"></asp:Label>
                             <fieldset>
                             <legend>Inicio de sesión</legend>  
                             <br />

@@ -17,6 +17,7 @@ namespace LogicaNegocio.cl.subpesca.rb.errores
 
 
         private string m_exePath = string.Empty;
+        private static readonly NLog.Logger NLogger = NLog.LogManager.GetCurrentClassLogger();
 
         public void LogWrite(string logMessage)
         {
@@ -68,6 +69,8 @@ namespace LogicaNegocio.cl.subpesca.rb.errores
             //Console.WriteLine(ex.GetType().FullName);
             //Console.WriteLine(ex.Message);
             //Console.WriteLine(ex.StackTrace);
+
+            NLogger.Error(ex, "Error Controlado en la aplicación");
         }
 
         public void SendMailError(Exception ex) {
